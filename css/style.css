@@ -1,5 +1,6 @@
 :root {
   --accent-color: #2196f3;
+  --accent-color-hover: #188CE8;
   --headers-color: #212121;
   --light-grey-color: #757575;
   --background-color: #2f303a;
@@ -155,7 +156,9 @@ header {
   transition: color var(--animation-time) var(--cubic);
 }
 .info .item:hover,
-.info .item:focus {
+.info .item:focus,
+.footer-info .item:hover,
+.footer-info .item:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -176,8 +179,13 @@ header {
 }
 .banner .button {
   margin-top: 45px;
-}
 
+  transition: background-color var(--animation-time) var(--cubic);
+}
+.banner .button:hover,
+.banner .button:focus {
+  background-color: var(--accent-color-hover);
+}
 .section {
   padding-top: 94px;
 }
